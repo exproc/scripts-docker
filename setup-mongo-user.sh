@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 mkdir -p $HOME/docker-apps/secrets/mongo
 echo "MONGO_INITDB_ROOT_USERNAME=root" > $HOME/docker-apps/secrets/mongo/MONGO_INITDB_ROOT_USERNAME
 echo "MONGO_INITDB_ROOT_PASSWORD=$(openssl rand -base64 6 | tr -d '\n')" > $HOME/docker-apps/secrets/mongo/MONGO_INITDB_ROOT_PASSWORD
